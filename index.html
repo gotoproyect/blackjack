@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header id="titulo">BLACK JACK</header>
+    <!--CONTENEDOR DE CARTAS DEL JUGADOR-->
+    <div id="contenedor_principal">
+
+    <div class="row_container">
+        <div class="col">
+            <h1>Jugador 1 -<small id="ptsJugador">0</small></h1>
+            <div id="divCartasJugador">
+                
+            </div>
+        </div>
+    </div>
+    <!--CONTENEDOR DE CARTAS DE LA COMPUTADORA-->
+    <div class="row_container mt-2">
+        <div class="col">
+            <h1>Computadora -<small id="ptsComputadora">0</small></h1>
+            <div id="divCartasComputadora">
+            </div>
+        </div>
+    </div>
+</div>
+  <!--CONTENDOR DE BOTONES-->
+  <div class="row_mt">
+    <div id="divBotones">
+        <button class="button" id="btnNuevoJuego"></button>
+        <button class="button" id="btnPedir"></button>
+        <button class="button" id="btnDetener">DETENER</button>
+    </div>
+</div>
+
+<div id="fixeado"><h1 id="ganador">soy un fixed</h1></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

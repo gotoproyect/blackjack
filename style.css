@@ -1,0 +1,138 @@
+body{
+  color: #fff;
+  background-color:#0F570D;
+  margin: 0;
+  padding: 0;
+  background-image: url(./assets/background/Corruptini.png);
+  background-position: 50% 150%;
+  /*
+  background-position-x: 50%;
+  background-position-y: 150%;*/
+  background-repeat: no-repeat;
+  background-size: 30%;
+  
+}
+header{
+  background-color: #000;
+  width: 100%;
+}
+#titulo{
+  text-align: center;
+  font-family: cursive;
+  color: #fff;
+  font-size: 350%;
+  padding: 0.1% 0 0.1% 0;
+}
+img{
+width: 20%;
+left: 100px;
+margin-left: -75px;
+position: relative;
+}
+#contenedor_principal{
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  }
+
+.row_container{
+width: 50%;
+max-width: 50%;
+}
+#divCartasComputadora, #divCartasJugador{
+min-height: 220px;
+}
+.row_mt{
+display: flex;
+flex-direction: row;
+align-self: center;
+justify-content: center;
+text-align: center;
+}
+@keyframes girarcarta {
+  from {
+      animation-delay: 1s;
+      transform: translateX(-100%)rotateY(180deg);/*Se pueden conbinar los transform, anotalo oto*/
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0)rotateY(0deg);
+      opacity: 1;
+  }
+}
+
+.animate {
+  animation: girarcarta 1s ease-out;
+}
+#divBotones{
+width: 100%;
+display: flex;
+justify-content: center;
+position: fixed;
+bottom: 0;
+margin-bottom: 1%;
+height: 110px;
+}
+#btnPedir{
+width: 10%;
+height: 100%;
+background-image: url(./assets/botones/cartas.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 78%;
+border-radius: 10px;
+border: 0px;
+margin-left: 2%;
+margin-right: 2%;
+background-color: black;
+}
+#fixeado{
+display: fixed;
+text-align: center;
+width: 100%;
+middle:0;
+position: absolute;
+}
+.col{
+  text-align: center;
+}
+#btnNuevoJuego{
+  background-image: url(./assets/botones/ficha.png);
+  background-position: center;
+background-repeat: no-repeat;
+background-size: 78%;
+border-radius: 10px;
+border: 0px;
+width: 10%;
+background-color: black;
+}
+#btnDetener{
+background-color: #CA0C0C;
+width: 10%;
+border-radius: 10px;
+border: 0px;
+color: #fff;
+font-family: monospace;
+font-size: 120%;
+}
+
+/*animacion del boton*/  
+.button:active {
+ /* transform: scale(0.9);*/
+ animation: click 1s ease-out;
+}
+
+@keyframes click {
+  from {
+      transform: scale(0.9);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+#ganador{
+  opacity: 0;
+}
+.ganador{
+  animation: girarcarta 1s ease-out;
+}
